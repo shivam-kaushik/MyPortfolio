@@ -1,11 +1,24 @@
+<!-- Name: Shivam Kaushik
+Student Node.: 301363333
+Date: 27th Sep 2023 
+File Name: home.ejs -->
+
 <%- include ('partials/header.ejs') %>
-    <%- include ('partials/nav.ejs') %>
+    <%- include ('partials/content.ejs') %>
 
         <main class="container">
             <div class="jumbotron">
-                <h1 class="display-4">Welcome to <%= title %> page</h1>
-                <p>I am Home</p>
+                <h1 class="display-4">Hello Folks!</h1>
+                <br>
+                <!-- My Introduction -->
+                <h5>My name is Shivam Kaushik, and I am a Software Engineer.</h5>                
+                <p>Driven software engineer passionate about developing innovative solutions that solve real-world
+                    problems. Committed to continuous learning, collaboration, and delivering exceptional results in the
+                    ever-evolving tech landscape.</p>
+                <!-- Mission Statement -->
+                <p>My Mission: "To create innovative technology that positively changes the lives of people worldwide."
+                </p>
             </div>
         </main>
-        <%- include ('partials/bottom_nav.ejs') %>
-            <%- include ('partials/footer.ejs') %>
+
+        <%- include ('partials/footer.ejs') %>

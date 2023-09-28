@@ -1,17 +1,38 @@
+<!-- Name: Shivam Kaushik
+Student Node.: 301363333
+Date: 27th Sep 2023 
+File Name: about.ejs -->
+
 <%- include ('partials/header.ejs') %>
-    <%- include ('partials/nav.ejs') %>
+    <%- include ('partials/content.ejs') %>
 
         <main class="container">
             <div class="jumbotron">
-                <h1 class="display-4">Welcome to <%= title %> page</h1>
-                <p>I am about</p>
+                <h1 class="display-4" style="text-align: center;"><%= title %>
+                </h1>
+                <div>
+                    <!-- My Photo -->
+                    <img src="img/PHOTO-2023-06-16-14-42-57.jpg" alt="myphoto"
+                        style="height: 200px; width: 200px; display: block; margin-left: auto; margin-right: auto;">
+                </div>
+                <br>
+                <p style="text-align: center;">
+                <h3>Shivam Kaushik</h3>
+                </p>
+                <p>
+                    <!-- About Me -->
+                    I am a passionate and innovative software engineer with a deep love for technology and a relentless
+                    curiosity that drives me to continually explore and expand my skills. Over the years, I have
+                    cultivated proficiency in various programming languages, frameworks, and methodologies, including
+                    but not limited to Python, C#, Java, SQL, JavaScript.
+                </p>
             </div>
             <div>
-                <h4>Download my Resume: <a href="../public/img/logo.jpg" download="logo.pdf">
+                <!-- Resume -->
+                <h6>Download my Resume: <a href="resume/General Resume.pdf" target="_blank">
                         Download My Resume (PDF)
-                    </a></h4>
+                    </a></h6>
             </div>
         </main>
 
-        <%- include ('partials/bottom_nav.ejs') %>
-            <%- include ('partials/footer.ejs') %>
+        <%- include ('partials/footer.ejs') %>

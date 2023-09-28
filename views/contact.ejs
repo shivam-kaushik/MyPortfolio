@@ -1,12 +1,52 @@
-<%- include ('partials/header.ejs') %>
-<%- include ('partials/nav.ejs') %>
+<!-- Name: Shivam Kaushik
+Student Node.: 301363333
+Date: 27th Sep 2023 
+File Name: contact.ejs -->
 
-<main class="container">
-    <div class="jumbotron">
-        <h1 class="display-4">Welcome to <%= title %> page</h1>
-        <p>I am contact</p>
-    </div>
-</main>
-<%- include ('partials/bottom_nav.ejs') %>
-    <%- include ('partials/footer.ejs') %>
-   
+<%- include ('partials/header.ejs') %>
+    <%- include ('partials/content.ejs') %>
+<section style="margin-bottom: 20px;">
+
+    <main class="container" style="margin-bottom: 20px;">
+        <div class="jumbotron">
+            <h1 class="display-4" style="text-align: center;">
+                <%= title %>
+            </h1>
+        </div>
+        <!-- Contact Information -->
+        <div class="contactinfo" style="text-align: center;">
+            <h3>My Contact Information:</h3><p>Email: shivamkaushik2k@gmail.com
+            Phone: +1 (437) 667-8011</p>
+        </div>
+
+        <div class="col-md-6" style="display: block; margin-left: auto; margin-right: auto; height: 100px;">
+            <h4>Contact Form</h4>
+            <!-- Form for contact with First Name, Last Name, Contact Number, Email, and Message -->
+            <form action="/submitContact" method="POST">
+                <div class="mb-3">
+                    <label for="firstName" class="form-label">First Name</label>
+                    <input type="text" class="form-control" id="firstName" name="firstName" required>
+                </div>
+                <div class="mb-3">
+                    <label for="lastName" class="form-label">Last Name</label>
+                    <input type="text" class="form-control" id="lastName" name="lastName" required>
+                </div>
+                <div class="mb-3">
+                    <label for="contactNumber" class="form-label">Contact Number</label>
+                    <input type="tel" class="form-control" id="contactNumber" name="contactNumber" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email Address</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" name="message" rows="2" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" style="display: block; margin-left: auto; margin-right: auto;">Submit</button>
+                <br><br><br>
+            </form>
+        </div>
+    </main>
+</section>
+        <%- include ('partials/footer.ejs') %>

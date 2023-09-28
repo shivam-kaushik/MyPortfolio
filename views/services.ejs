@@ -1,12 +1,42 @@
-<%- include ('partials/header.ejs') %>
-<%- include ('partials/nav.ejs') %>
+<!-- Name: Shivam Kaushik
+Student Node.: 301363333
+Date: 27th Sep 2023 
+File Name: services.ejs -->
 
-<main class="container">
-    <div class="jumbotron">
-        <h1 class="display-4">Welcome to <%= title %> page</h1>
-        <p>I am service</p>
-    </div>
-</main>
-<%- include ('partials/bottom_nav.ejs') %>
-    <%- include ('partials/footer.ejs') %>
-   
+<%- include ('partials/header.ejs') %>
+    <%- include ('partials/content.ejs') %>
+
+        <main class="container">
+            <div class="jumbotron">
+                <h1 class="display-4" style="text-align: center;">My <%= title %>
+                </h1>
+                <br>
+            </div>
+
+            <!-- Programming Services Section -->
+            <section>
+                <div class="card text-bg-dark"
+                    style="width: 450px; height: 150px; display: block; margin-left: auto; margin-right: auto;">
+                    <img src="img/an-introduction-to-low-level-programming.jpg" class="card-img" alt="...">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">Programming</h5>
+                        <p class="card-text">Python, C#, Java</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Web Development Services Section-->
+            <section>
+                <div class="card text-bg-dark"
+                    style="width: 450px; height: 100px; display: block; margin-left: auto; margin-right: auto; margin-top: 15px;">
+                    <img src="img/Web.png" class="card-img" alt="...">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">Web Development</h5>
+                        <p class="card-text">Node.js, Express.js,<br> Flask, HTML, CSS,<br> JavaScript</p>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <%- include ('partials/footer.ejs') %>

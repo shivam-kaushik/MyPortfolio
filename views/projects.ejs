@@ -1,12 +1,76 @@
-<%- include ('partials/header.ejs') %>
-<%- include ('partials/nav.ejs') %>
+<!-- Name: Shivam Kaushik
+Student Node.: 301363333
+Date: 27th Sep 2023 
+File Name: projects.ejs -->
 
-<main class="container">
-    <div class="jumbotron">
-        <h1 class="display-4">Welcome to <%= title %> page</h1>
-        <p>I am project</p>
-    </div>
-</main>
-<%- include ('partials/bottom_nav.ejs') %>
+<%- include ('partials/header.ejs') %>
+  <%- include ('partials/content.ejs') %>
+
+    <main class="container">
+      <div class="jumbotron">
+        <h1 class="display-4" style="text-align: center;">Welcome to My <%= title %>
+        </h1>
+        <br>
+      </div>
+
+      <!-- Authentication Website Card Section -->
+      <section>
+      <div class="card mb-3"
+        style="max-width: 700px; max-height: 1000px; display: block; margin-left: auto; margin-right: auto;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="img/AuthenticationWebsite.png" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Authentication Website</h5>
+              <p class="card-text">The website involves a multi factor authentication method. This method consists of
+                pair based and image based mode of authentication.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+      <!-- Food Website Card Section-->
+    <section>
+      <div class="card mb-3"
+        style="max-width: 700px; max-height: 1000px; display: block; margin-left: auto; margin-right: auto;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="img/FoodWebsite.png" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Food Delivery Website</h5>
+              <p class="card-text">The purpose of this website is to order food online and is also hosted on firebase.
+                Made using HTML, CSS, JavaScript.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+      <!-- Fitness Website Card Section -->
+    <section>
+      <div class="card mb-3"
+        style="max-width: 700px; max-height: 1000px; display: block; margin-left: auto; margin-right: auto;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="img/FitnessWebsite.png" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Fitness Website</h5>
+              <p class="card-text">This website is build in HTML and CSS to sign up for the Gym membership and is also
+                hosted on firebase.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    </main>
+
     <%- include ('partials/footer.ejs') %>
-   
